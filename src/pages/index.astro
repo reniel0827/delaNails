@@ -593,6 +593,7 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'})
         </div>
       </div>
       <a href="/about" class="cs-button-solid" style="color: #fafbfc;margin-top:4rem;">See More Photos</a>
+      
   </section>
     <!-- ============================================ -->
   <!--                    FAQ                       -->
@@ -603,8 +604,8 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'})
   <!--                   Reviews                    -->
   <!-- ============================================ -->
 
-  <section id="reviews">
-    <div class="cs-container">
+  <!-- <section id="reviews"> -->
+    <!-- <div class="cs-container">
       <span class="cs-topper">Our Reviews</span>
       <h2 class="cs-title">Words From Our Customers</h2>
       <p class="cs-text">
@@ -613,9 +614,9 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'})
         viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo,
         ornare. Lorem ipsum dolor sit amet.
       </p>
-      <ul class="cs-card-group">
+      <ul class="cs-card-group"> -->
         <!-- Review 1 -->
-        <li class="cs-item">
+        <!-- <li class="cs-item">
           <img
             class="cs-item-img"
             aria-hidden="true"
@@ -646,9 +647,9 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'})
             width="96"
             height="16"
           />
-        </li>
+        </li> -->
         <!-- Review 2 -->
-        <li class="cs-item">
+        <!-- <li class="cs-item">
           <img
             class="cs-item-img"
             aria-hidden="true"
@@ -685,8 +686,15 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'})
         >Our Reviews</a
       >
     </div>
+  </section> -->
+  <section id="googleRevieiws" class="flex flex-col justify-center items-center" style="margin-top: 8rem;">
+    <h1 class="font-bold text-3xl " style="margin-bottom: 4rem;color:#b59c7f;margin-top:4rem;">OUR REVIEWS</h1>
+    <div class="w-5/6 mx-auto flex flex-row flex-wrap overflow-hidden items-center justify-center">
+        <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-7b04666c-dbcb-4224-9f78-bbafa5d367d2" data-elfsight-app-lazy></div>
+    </div>
   </section>
-
   <CTA />
 </BaseLayout>
 
@@ -1702,25 +1710,25 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'})
     }
   }
 
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #reviews {
-        .cs-title,
-        .cs-text,
-        .cs-item-p,
-        .cs-reviewer {
-          color: var(--bodyTextColorWhite);
-        }
+//   /* Dark Mode */
+//   @media only screen and (min-width: 0em) {
+//     body.dark-mode {
+//       #reviews {
+//         .cs-title,
+//         .cs-text,
+//         .cs-item-p,
+//         .cs-reviewer {
+//           color: var(--bodyTextColorWhite);
+//         }
 
-        .cs-item {
-          background: var(--medium);
-        }
+//         .cs-item {
+//           background: var(--medium);
+//         }
 
-        .cs-desc {
-          color: var(--primaryLight);
-        }
-      }
-    }
-  }
-</style>
+//         .cs-desc {
+//           color: var(--primaryLight);
+//         }
+//       }
+//     }
+//   }
+// </style>
