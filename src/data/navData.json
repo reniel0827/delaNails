@@ -10,21 +10,29 @@
     "children": []
   },
   {
-    "key": "Projects",
+    "key": "Services",
     "url": "/projects/",
     "children": [
       {
-        "key": "Project 1",
-        "url": "/projects/project-1/"
+        "key": "Nails",
+        "url": "/projects/nails"
       },
       {
-        "key": "Project 2",
-        "url": "/projects/project-2/"
+        "key": "Lashes",
+        "url": "/projects/lashes/"
+      },
+      {
+        "key": "Brows",
+        "url": "/projects/brows/"
+      },
+      {
+        "key": "Courses",
+        "url": "/projects/courses/"
       }
     ]
   },
   {
-    "key": "Reviews",
+    "key": "Gallery",
     "url": "/reviews/",
     "children": []
   },

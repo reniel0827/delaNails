@@ -5,7 +5,7 @@ import Landing from "@components/Landing.astro";
 import FAQ from "@components/FAQ.astro";
 
 // Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
-import landingImage from "@assets/images/landing.jpg" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+import landingImage from "public/assets/images/delaHero.jpeg" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
 import { getImage } from "astro:assets";
 const optimizedImage = await getImage({src: landingImage, format: 'avif'})
 ---
@@ -28,10 +28,10 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'})
   <!--                 Side By Side                 -->
   <!-- ============================================ -->
 
-  <section id="sbs">
-    <div class="cs-container">
+  <!-- <section id="sbs">
+    <div class="cs-container"> -->
       <!-- Left Image Section -->
-      <div class="cs-left">
+      <!-- <div class="cs-left">
         <picture class="cs-picture cs-picture1">
           <source
             media="(max-width: 600px)"
@@ -70,9 +70,9 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'})
             height="563"
           />
         </picture>
-      </div>
+      </div> -->
       <!-- Right Content Section-->
-      <div class="cs-right">
+      <!-- <div class="cs-right">
         <span class="cs-topper">About Us</span>
         <h2 class="cs-title">About Company Title</h2>
         <p class="cs-text">
@@ -107,8 +107,71 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'})
         <a href="/projects" class="cs-button-solid">Our Projects</a>
       </div>
     </div>
+  </section> -->
+  <section id="about-us" class="w-full flex flex-col items-center justify-center">
+    <div class="w-3/4 flex flex-col items-center justify-center">
+      <h1 class="font-bold " style="font-size: clamp(1rem,5vw,3rem);margin-top: 1rem;">Beauty.Education.Empowerment</h1>
+      <div class=" w-full flex flex-row flex-wrap justify-center items-center gap-x-4 md:flex-nowrap xl:w-4/5" style="margin-top: 2rem;margin-bottom: 2rem;">
+        <div class=" flex justify-end md:w-1/2 ">
+          <img src="/assets/images/aboutUs.png" class="object-cover rounded-3xl md:max-h-96">
+        </div>
+        <div class="md:w-1/2 " style="margin-top: 2rem;">
+          <p class="text-center xl:w-2/3">Dela Nails was founded in 2023 by Ronn Reigie V. Mendoza, 
+            a licensed nail technician and educator with a passion for beauty and a vision for change. What began as 
+            a humble beauty service offering has grown into a trusted brand known for its commitment to quality, professionalism, 
+            and empowerment.Driven by a deep love for the craft and a desire to uplift others, Reigie created Dela Nails not just
+             as a salon—but as a space where creativity, care, and confidence come together. With a natural talent for detail and
+              an eye for design, he quickly earned the trust of clients looking for precise, stylish, and lasting nail and lash
+               services.</p>
+        </div>
+      </div>
+      <div class="lg:w-1/2">
+        <h1 class="font-bold text-center" style="font-size: clamp(1rem,5vw,3rem);margin-top: 1rem;margin-bottom: 1rem;">A Growing Vision</h1>
+        <div class="">
+          <img src="/assets/images/aboutCourse.jpeg" class="rounded-2xl" style="margin-bottom: 1rem;">
+        </div>
+        <div>
+          <p class="text-center justify-center">
+            As the demand for beauty services increased, Reigie saw another opportunity—to share his knowledge and 
+            help others build successful careers in the beauty industry. With that, Dela Nails expanded into offering 
+            professional training courses, blending practical skill-building with personal mentorship. These programs
+            have empowered aspiring nail artists and lash technicians to turn their passion into a profession.
+          </p>
+        </div>
+      </div>
+      <div class="lg:w-1/2">
+        <h1 class="font-bold text-center" style="font-size: clamp(1rem,5vw,3rem);margin-top: 1rem;margin-bottom: 1rem;">Today</h1>
+        <h1>Dela Nails is proud to serve as both a premier beauty destination and a respected training hub. 
+          We specialize in:</h1>
+        <div class="flex flex-col justify-center items-center" style="margin-bottom:2rem;margin-top:2rem;">
+          <div class="flex flex-row justify-center items-center gap-x-2">
+            <img src="/assets/images/highQuality.png" class="w-1/2">
+            <h1>High-quality nail, lash, and brow services</h1>
+          </div>
+          <div class="flex flex-row justify-center items-center gap-x-2">
+            <img src="/assets/images/handsOn.png" class="w-1/2">
+            <h1>Hands-on training and certification courses</h1>
+          </div>
+          <div class="flex flex-row justify-center items-center gap-x-2">
+            <img src="/assets/images/support.png" class="w-1/2">
+            <h1>A supportive, inclusive environment where clients and students thrive</h1>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/2" style="margin-bottom: 2rem;">
+        <div>
+          <h1 class="font-bold text-center" style="font-size: clamp(1rem,5vw,3rem);margin-top: 1rem;margin-bottom: 1rem;">Our Mission</h1>
+          <h1 class="text-center">To enhance natural beauty and inspire confidence through expert services and quality education.</h1>
+        </div>
+        <div>
+          <h1 class="font-bold text-center" style="font-size: clamp(1rem,5vw,3rem);margin-top: 1rem;margin-bottom: 1rem;">Our Vision</h1>
+          <h1 class="text-center">To be a leading force in the beauty industry—recognized
+             for our artistry, our teaching, and our commitment to helping others succeed.</h1>
+        </div>
+      </div>
+    </div>
   </section>
-  <FAQ />
+  <!-- <FAQ /> -->
   <CTA />
 </BaseLayout>
 
