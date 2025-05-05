@@ -27,210 +27,185 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'})
   <!--                   Gallery                    -->
   <!-- ============================================ -->
 
-  <!-- <section id="gallery">
-    <div class="cs-container">
-      <div class="cs-image-group"> -->
-        <!-- Row 1-->
-        <!-- <div class="cs-row cs-row-1">
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port1-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port1.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port1.jpg"
-              alt="new hallway"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port4-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port4.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port4.jpg"
-              alt="new home construction"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port7-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port7.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port7.jpg"
-              alt="building a new wall"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture> -->
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-        <!-- </div> -->
-        <!-- Row 2 -->
-        <!-- <div class="cs-row cs-row-2">
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port2-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port2.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port2.jpg"
-              alt="new kitchen"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port5-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port5.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port5.jpg"
-              alt="apartment addition"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port8-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port8.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port8.jpg"
-              alt="kew kitchen cabinets"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture> -->
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-        <!-- </div> -->
-        <!-- Row 3 -->
-        <!-- <div class="cs-row cs-row-3">
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port3-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port3.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port3.jpg"
-              alt="new kitchen"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port6-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port6.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port6.jpg"
-              alt="apartment addition"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port9-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port9.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port9.jpg"
-              alt="kew kitchen cabinets"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture> -->
-
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-        <!-- </div> -->
-      <!-- </div> -->
-      <!-- <a href="/contact" class="cs-button-solid">Get Free Quote</a>
+  <section id="nails" class="w-full flex flex-col justify-center items-center">
+    <div class="w-5/6 flex flex-row flex-wrap gap-8 justify-center items-center " style="margin: 2rem 0;">
+      <img src="/assets/images/nails1.jpeg" class="w-72 max-w-[800px] object-cover rounded-3xl xl:w-1/3">
+      <img src="/assets/images/nails2.jpeg" class="w-72 max-w-[800px] object-cover rounded-3xl xl:w-1/3">
+      <img src="/assets/images/nail3.jpeg" class="w-72 max-w-[800px] object-cover rounded-3xl xl:w-1/3">
+      <img src="/assets/images/nails4.jpeg" class="w-72 max-w-[800px] object-cover rounded-3xl xl:w-1/3">
     </div>
-  </section> -->
-  <section id="nails">
-    <div>
-      <div>
+    <div class="w-3/4 flex flex-col justify-center items-center md:hidden" style="margin: 1rem 0 1rem 0;">
+      <div class="flex flex-col justify-center items-center " style="margin: 1rem 0 1rem 0;width:clamp(150px,70vw,500px);">
         <h1>Shellac Polish</h1>
         <h1>Includes shaping and 1 color of gel polish (shellac) on your natural nails.</h1>
         <p>Please select your existing nail length from add-ons.
           If you have shellac on your nails and wasn't done by me, please add removal for shellac from add ons.</p>
         <p>*One shellac color included</p>
         <p>*Cuticles and designs are extra*</p>
-        <a href="" class="cs-button-solid" style="color: #fafbfc;">Select</a>
-      </div>
-      
+        <a href="" class="cs-button-solid" style="color: #fafbfc;margin: 1rem 0 1rem 0;" >Select</a>
+      </div> 
+      <div class="flex flex-col justify-center items-center " style="margin: 1rem 0 1rem 0;width:clamp(150px,70vw,500px);">
+        <h1>Biogel with Extensions (Tips)</h1>
+        <h1>Includes shaping and 1 color of gel polish (shellac) on your natural nails.</h1>
+        <p>Choose this option if you need longer nails than what you have right now. Select the desired length on "add-ons" section.</p>
+        <p>*One shellac color included</p>
+        <p>*Cuticles and designs are extra*</p>
+        <a href="" class="cs-button-solid" style="color: #fafbfc;margin: 1rem 0 1rem 0;" >Select</a>
+      </div>     
+      <div class="flex flex-col justify-center items-center " style="margin: 1rem 0 1rem 0;width:clamp(150px,70vw,500px);">
+        <h1>Biogel Fill</h1>
+        <h1>Includes shaping and 1 color of gel polish (shellac) on your natural nails.</h1>
+        <p>Choose this option if you have existing biogel and would like to do a fill only.
+          <br><span class="italic">If you need a fill but the set wasn’t done by me, please add the foreign fill option under add ons.</span></p>
+        <p>*One shellac color included</p>
+        <p>*Cuticles and designs are extra*</p>
+        <a href="" class="cs-button-solid" style="color: #fafbfc;margin: 1rem 0 1rem 0;" >Select</a>
+      </div> 
+      <div class="flex flex-col justify-center items-center " style="margin: 1rem 0 1rem 0;width:clamp(150px,70vw,500px);">
+        <h1>Removals</h1>
+        <h1>Removal of biogel or acrylic on your nails. Choose this option if you need removal alone.</h1>
+        <p>Price include:<br>
+          Nail trimming<br>
+          Nail strengthener.</p>
+        <p>You can add the cuticle clean for extra charge.</p>
+        <a href="" class="cs-button-solid" style="color: #fafbfc;margin: 1rem 0 1rem 0;" >Select</a>
+      </div>    
+      <div class="flex flex-col justify-center items-center " style="margin: 1rem 0 1rem 0;width:clamp(150px,70vw,500px);">
+        <h1>Polish Change</h1>
+        <h1>Includes removal of existing color, polishing, enhance shaping and 1 color of your choice (short length)</h1>
+        <p>*design not included. Add it from the “add-ons”*for existing clients only</p>
+        <a href="" class="cs-button-solid" style="color: #fafbfc;margin: 1rem 0 1rem 0;" >Select</a>
+      </div>   
+      <div class="flex flex-col justify-center items-center " style="margin: 1rem 0 1rem 0;width:clamp(150px,70vw,500px);">
+        <h1>Nail Fix (Alone)</h1>
+        <h1>If your nails got chipped, or damaged within a week after you get it done - 
+          you’re eligible for free fix and you must come within 3 days. Otherwise, $10 fee will apply per nail</h1>
+        <a href="" class="cs-button-solid" style="color: #fafbfc;margin: 1rem 0 1rem 0;" >Select</a>
+      </div> 
+      <div class="flex flex-col justify-center items-center " style="margin: 1rem 0 1rem 0;width:clamp(150px,70vw,500px);">
+        <h1>Dry Pedicure</h1>
+        <h1>This service includes cuticle clean, callus removal and 1 gel color.</h1>
+        <p>Choose this option if you have existing biogel and would like to do a fill only.
+          <br><span class="italic">If you need a fill but the set wasn’t done by me, please add the foreign fill option under add ons.</span></p>
+        <p>*Please note that design is always extra.</p>
+        <p>*If nail plate is uneven, overlay may be required to even the surface</p>
+        <a href="" class="cs-button-solid" style="color: #fafbfc;margin: 1rem 0 1rem 0;" >Select</a>
+      </div>   
+      <div class="flex flex-col justify-center items-center " style="margin: 1rem 0 1rem 0;width:clamp(150px,70vw,500px);">
+        <h1>BIAB FULLSET (Natural Nails Only)</h1>
+        <h1>BIAB stands for “Builder in a Bottle” . It includes nail shaping, buffing, cuticle work, BIAB application on your natural nails and Color/design of your choice.
+        </h1>
+        <p>Ps. There is no refill on this service and has to remove all of the product. It works like shellac/gel color.</p>
+        <p>*Benefits:</p>
+        <p>✔ High-Quality – We use only the top brands for BIAB to ensure durability, strength, and a beautiful finish.<br>
+          ✔ Long-Lasting<br>
+          ✔ Natural & Flexible<br>
+          ✔ Customizable Designs<br>
+          ✔️ No Damage</p>
+        <a href="" class="cs-button-solid" style="color: #fafbfc;margin: 1rem 0 1rem 0;" >Select</a>
+      </div> 
     </div>
+    <div class="hidden md:flex md:flex-col md:items-center w-full" style="margin: 1rem 0;">
+      <!-- Shellac Polish -->
+      <div class="flex flex-row justify-between gap-x-8 items-center w-5/6 max-w-[1100px]" style="margin: 1rem 0;">
+        <div>
+          <h1 class="font-bold text-2xl">Shellac Polish</h1>
+          <h1>Includes shaping and 1 color of gel polish (shellac) on your natural nails.</h1>
+          <p>Please select your existing nail length from add-ons.
+            If you have shellac on your nails and wasn't done by me, please add removal for shellac from add ons.</p>
+          <p>*One shellac color included</p>
+          <p>*Cuticles and designs are extra*</p>
+        </div>
+        <a href="" class="cs-button-solid" style="color: #fafbfc; margin: 1rem 0;">Select</a>
+      </div>
+    
+      <!-- Biogel with Extensions -->
+      <div class="flex flex-row justify-between gap-x-8 items-center w-5/6 max-w-[1100px]" style="margin: 1rem 0;">
+        <div>
+          <h1 class="font-bold text-2xl">Biogel with Extensions (Tips)</h1>
+          <h1>Includes shaping and 1 color of gel polish (shellac) on your natural nails.</h1>
+          <p>Choose this option if you need longer nails than what you have right now. Select the desired length on "add-ons" section.</p>
+          <p>*One shellac color included</p>
+          <p>*Cuticles and designs are extra*</p>
+        </div>
+        <a href="" class="cs-button-solid" style="color: #fafbfc; margin: 1rem 0;">Select</a>
+      </div>
+    
+      <!-- Biogel Fill -->
+      <div class="flex flex-row justify-between gap-x-8 items-center w-5/6 max-w-[1100px]" style="margin: 1rem 0;">
+        <div>
+          <h1 class="font-bold text-2xl">Biogel Fill</h1>
+          <h1>Includes shaping and 1 color of gel polish (shellac) on your natural nails.</h1>
+          <p>Choose this option if you have existing biogel and would like to do a fill only.
+            <br><span class="italic">If you need a fill but the set wasn’t done by me, please add the foreign fill option under add ons.</span></p>
+          <p>*One shellac color included</p>
+          <p>*Cuticles and designs are extra*</p>
+        </div>
+        <a href="" class="cs-button-solid" style="color: #fafbfc; margin: 1rem 0;">Select</a>
+      </div>
+    
+      <!-- Removals -->
+      <div class="flex flex-row justify-between gap-x-8 items-center w-5/6 max-w-[1100px]" style="margin: 1rem 0;">
+        <div>
+          <h1 class="font-bold text-2xl">Removals</h1>
+          <h1>Removal of biogel or acrylic on your nails. Choose this option if you need removal alone.</h1>
+          <p>Price include:<br>Nail trimming<br>Nail strengthener.</p>
+          <p>You can add the cuticle clean for extra charge.</p>
+        </div>
+        <a href="" class="cs-button-solid" style="color: #fafbfc; margin: 1rem 0;">Select</a>
+      </div>
+    
+      <!-- Polish Change -->
+      <div class="flex flex-row justify-between gap-x-8 items-center w-5/6 max-w-[1100px]" style="margin: 1rem 0;">
+        <div>
+          <h1 class="font-bold text-2xl">Polish Change</h1>
+          <h1>Includes removal of existing color, polishing, enhance shaping and 1 color of your choice (short length)</h1>
+          <p>*design not included. Add it from the “add-ons”* for existing clients only</p>
+        </div>
+        <a href="" class="cs-button-solid" style="color: #fafbfc; margin: 1rem 0;">Select</a>
+      </div>
+    
+      <!-- Nail Fix -->
+      <div class="flex flex-row justify-between gap-x-8 items-center w-5/6 max-w-[1100px]" style="margin: 1rem 0;">
+        <div>
+          <h1 class="font-bold text-2xl">Nail Fix (Alone)</h1>
+          <h1>If your nails got chipped, or damaged within a week after you get it done - 
+            you’re eligible for free fix and you must come within 3 days. Otherwise, $10 fee will apply per nail</h1>
+        </div>
+        <a href="" class="cs-button-solid" style="color: #fafbfc; margin: 1rem 0;">Select</a>
+      </div>
+    
+      <!-- Dry Pedicure -->
+      <div class="flex flex-row justify-between gap-x-8 items-center w-5/6 max-w-[1100px]" style="margin: 1rem 0;">
+        <div>
+          <h1 class="font-bold text-2xl">Dry Pedicure</h1>
+          <h1>This service includes cuticle clean, callus removal and 1 gel color.</h1>
+          <p><span class="italic">If you need a fill but the set wasn’t done by me, please add the foreign fill option under add ons.</span></p>
+          <p>*Please note that design is always extra.</p>
+          <p>*If nail plate is uneven, overlay may be required to even the surface</p>
+        </div>
+        <a href="" class="cs-button-solid" style="color: #fafbfc; margin: 1rem 0;">Select</a>
+      </div>
+    
+      <!-- BIAB FULLSET -->
+      <div class="flex flex-row justify-between gap-x-8 items-center w-5/6 max-w-[1100px]" style="margin: 1rem 0;">
+        <div>
+          <h1 class="font-bold text-2xl">BIAB FULLSET (Natural Nails Only)</h1>
+          <h1>BIAB stands for “Builder in a Bottle”. It includes nail shaping, buffing, cuticle work, BIAB application on your natural nails and color/design of your choice.</h1>
+          <p>Ps. There is no refill on this service and has to remove all of the product. It works like shellac/gel color.</p>
+          <p>*Benefits:</p>
+          <p>
+            ✔ High-Quality – We use only the top brands for BIAB to ensure durability, strength, and a beautiful finish.<br>
+            ✔ Long-Lasting<br>
+            ✔ Natural & Flexible<br>
+            ✔ Customizable Designs<br>
+            ✔️ No Damage
+          </p>
+        </div>
+        <a href="" class="cs-button-solid" style="color: #fafbfc; margin: 1rem 0;">Select</a>
+      </div>
+    </div>
+    
   </section>
   <CTA />
 </BaseLayout>
