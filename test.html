@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Dropdown</title>
+  <style>
+    .dropdown-container {
+      margin: 20px;
+    }
+
+    .toggle-button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .image-dropdown {
+      margin-top: 10px;
+      display: none; /* Hidden by default */
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .image-dropdown img {
+      width: 150px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dropdown-container">
+    <button class="toggle-button" id="dropdownToggle">Show Images</button>
+
+    <div class="image-dropdown" id="imageDropdown">
+      <img src="public/assets/images/nails1.jpeg" alt="Image 1">
+      <img src="public/assets/images/nails1.jpeg" alt="Image 2">
+      <img src="public/assets/images/nails1.jpeg" alt="Image 3">
+    </div>
+  </div>
+
+  <script>
+    const toggleButton = document.getElementById('dropdownToggle');
+    const imageDropdown = document.getElementById('imageDropdown');
+
+    toggleButton.addEventListener('click', () => {
+      const isVisible = imageDropdown.style.display === 'flex';
+      imageDropdown.style.display = isVisible ? 'none' : 'flex';
+      toggleButton.textContent = isVisible ? 'Show Images' : 'Hide Images';
+    });
+  </script>
+
+</body>
+</html>

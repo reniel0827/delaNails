@@ -4,13 +4,13 @@ import CTA from "@components/CTA.astro";
 import Landing from "@components/Landing.astro";
 
 // Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
-import landingImage from "@assets/images/landing.jpg" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+import landingImage from "public/assets/images/delaHero.jpeg" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
 import { getImage } from "astro:assets";
 const optimizedImage = await getImage({src: landingImage, format: 'avif'});
 ---
 
 <BaseLayout
-  title="Reviews"
+  title="Gallery"
   description="Meta description for the page"
   preloadedImage = {optimizedImage}
 >
@@ -19,7 +19,7 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'});
   <!-- ============================================ -->
 
   <Landing 
-    title="Reviews"
+    title="Gallery"
     image={optimizedImage}
   />
 
@@ -27,7 +27,7 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'});
   <!--                  Reviews                     -->
   <!-- ============================================ -->
 
-  <section id="reviews">
+  <!-- <section id="reviews">
     <div class="container">
       <div class="review">
         <picture>
@@ -225,7 +225,94 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'});
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <section id="gallery">
+    <div>
+      <div class="dropdown-section flex flex-col justify-center items-center">
+        <button class="dropDowntoggle font-bold text-3xl" style="color:var(--primary)">Nails</button>
+        <div class="imageDropdown hidden md:flex md:flex-row md:flex-wrap md:justify-center md:items-center md:gap-4">
+          <img src="/assets/images/nails1.jpeg" alt="Nail Image 1" class="w-68 max-w-96">
+          <img src="/assets/images/nails2.jpeg" alt="Nail Image 2" class="w-68 max-w-96">
+          <img src="/assets/images/nail3.jpeg" alt="Nail Image 3" class="w-68 max-w-96">
+          <img src="/assets/images/nails4.jpeg" alt="Nail Image 4" class="w-68 max-w-96">
+        </div>
+      </div>
+      <div class="dropdown-section flex flex-col justify-center items-center">
+        <button class="dropDowntoggle font-bold text-3xl" style="color:var(--primary)">Lashes</button>
+        <div class="imageDropdown hidden md:flex md:flex-row md:flex-wrap md:justify-center md:items-center md:gap-4">
+          <img src="/assets/images/nails1.jpeg" alt="Nail Image 1" class="w-68 max-w-96">
+          <img src="/assets/images/nails2.jpeg" alt="Nail Image 2" class="w-68 max-w-96">
+          <img src="/assets/images/nail3.jpeg" alt="Nail Image 3" class="w-68 max-w-96">
+          <img src="/assets/images/nails4.jpeg" alt="Nail Image 4" class="w-68 max-w-96">
+        </div>
+      </div>
+      <div class="dropdown-section flex flex-col justify-center items-center">
+        <button class="dropDowntoggle font-bold text-3xl" style="color:var(--primary)">Brows</button>
+        <div class="imageDropdown hidden md:flex md:flex-row md:flex-wrap md:justify-center md:items-center md:gap-4">
+          <img src="/assets/images/nails1.jpeg" alt="Nail Image 1" class="w-68 max-w-96">
+          <img src="/assets/images/nails2.jpeg" alt="Nail Image 2" class="w-68 max-w-96">
+          <img src="/assets/images/nail3.jpeg" alt="Nail Image 3" class="w-68 max-w-96">
+          <img src="/assets/images/nails4.jpeg" alt="Nail Image 4" class="w-68 max-w-96">
+        </div>
+      </div>
+      <div class="dropdown-section flex flex-col justify-center items-center">
+        <button class="dropDowntoggle font-bold text-3xl" style="color:var(--primary)">Courses</button>
+        <div class="imageDropdown hidden md:flex md:flex-row md:flex-wrap md:justify-center md:items-center md:gap-4">
+          <img src="/assets/images/nails1.jpeg" alt="Nail Image 1" class="w-68 max-w-96">
+          <img src="/assets/images/nails2.jpeg" alt="Nail Image 2" class="w-68 max-w-96">
+          <img src="/assets/images/nail3.jpeg" alt="Nail Image 3" class="w-68 max-w-96">
+          <img src="/assets/images/nails4.jpeg" alt="Nail Image 4" class="w-68 max-w-96">
+        </div>
+      </div>
+      
+    </div>
+</section>
+
+<script>
+    // main.ts
+    const toggleButtons = document.querySelectorAll<HTMLButtonElement>('.dropDowntoggle');
+
+toggleButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const dropdown = button.nextElementSibling as HTMLDivElement | null;
+
+    if (dropdown) {
+      // Toggle the 'hidden' class to show/hide the dropdown
+      dropdown.classList.toggle('hidden');
+      // Optional: You can add animations or transitions if you want
+    }
+  });
+});
+</script>
+<!-- <section class="flex flex-col justify-center items-center">
+  <nav class="w-3/4 ">
+    <ul class="flex flex-row justify-around items-center ">
+      <a href="#nails"><li>Nails</li></a>
+      <a href="#lashes"><li>Lashes</li></a>
+      <a><li>Brows</li></a>
+      <a><li>Courses</li></a>
+    </ul>
+  </nav>
+  <div>
+    <h1>NAILS</h1>
+    <div id="nails" class=" flex flex-row justify-center items-center flex-wrap gap-4">
+      <img src="/assets/images/nails1.jpeg" alt="Nail Image 1" class="max-w-96">
+      <img src="/assets/images/nails2.jpeg" alt="Nail Image 2" class="max-w-96">
+      <img src="/assets/images/nail3.jpeg" alt="Nail Image 3" class="max-w-96">
+      <img src="/assets/images/nails4.jpeg" alt="Nail Image 4" class="max-w-96">
+    </div>
+  </div>
+  <div>
+    <h1>LASHES</h1>
+    <div id="lashes" class=" flex flex-row justify-center items-center flex-wrap gap-4">
+      <img src="/assets/images/nails1.jpeg" alt="Nail Image 1" class="max-w-96">
+      <img src="/assets/images/nails2.jpeg" alt="Nail Image 2" class="max-w-96">
+      <img src="/assets/images/nail3.jpeg" alt="Nail Image 3" class="max-w-96">
+      <img src="/assets/images/nails4.jpeg" alt="Nail Image 4" class="max-w-96">
+    </div>
+  </div>
+</section> -->
+
   <CTA />
 </BaseLayout>
 
