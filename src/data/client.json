@@ -1,15 +1,15 @@
 {
-	"name": "Code Stitch Web Designs",
-	"email": "help@codestitch.app",
+	"name": "Dela Nails",
+	"email": "itsdelaxbeauty@gmail.com",
 	"phoneForTel": "555-779-4407",
 	"phoneFormatted": "(555) 779-4407",
 	"address": {
-		"lineOne": "Philippines",
-		"lineTwo": "Second Address Line",
-		"city": "Denver",
-		"state": "CO",
-		"zip": "4022",
-		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+		"lineOne": "62 Malamute Crescent, Scarborough",
+		"lineTwo": " ON M1T 2C7, Canada",
+		"city": "Ontario",
+		"state": "On",
+		"zip": "M1T 2C7",
+		"mapLink": "https://maps.app.goo.gl/PDXM9oWCj1sB7Bpa7"
 	},
 	"domain": "www.codestitch.app"
 }
