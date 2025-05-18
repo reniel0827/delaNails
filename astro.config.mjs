@@ -8,7 +8,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: "https://www.yourwebsite.com", // update me!
+  site: "https://delanails.netlify.app/", // update me!
   integrations: [
     icon(),
     sitemap({
