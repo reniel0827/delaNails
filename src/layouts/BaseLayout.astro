@@ -8,6 +8,7 @@ import "@styles/root.less";
 import "@styles/dark.less";
 import "../styles/global.css";
 
+
 // Define a type for images from the content collection
 type ContentImage = {
   src: string;
@@ -41,6 +42,8 @@ const { description, title, preloadedImage } = Astro.props as Props;
             <meta name="description" content={description}>
             <meta name="keywords" content="">
             <link rel="canonical" href={`https://${client.domain}${Astro.url.pathname}`}>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
 
             <!-- If present, preloads the image passed as a prop -->
             {preloadedImage && <link rel="preload" href={preloadedImage.src} as="image" />}
